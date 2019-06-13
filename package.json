@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "node-telegram-bot-api": "^0.30.0"
+  },
+  "name": "kolmechbot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "repository": "https://github.com/pavship/kolmechbot.git",
+  "author": "PS",
+  "license": "MIT",
+  "scripts": {
+    "start": "node bot.js"
+  }
+}
