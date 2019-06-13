@@ -4,10 +4,11 @@ const TelegramBot = require('node-telegram-bot-api')
 
 const bot = new TelegramBot(
   process.env.TELEGRAM_KOLMECHBOT_TOKEN,
-  {webHook: { 
-    port: process.env.PORT || 8443,
-    host : process.env.HOST || '0.0.0.0'
-  }}
+  {polling: true},
+  // {webHook: { 
+  //   port: process.env.PORT || 8443,
+  //   host : process.env.HOST || '0.0.0.0'
+  // }}
 )
 
 console.log('bot > ', bot)
