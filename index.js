@@ -9,11 +9,11 @@ const token = process.env.TELEGRAM_KOLMECHBOT_TOKEN
 const bot = new TelegramBot(
   token,
   // {polling: true},
-  {webHook: true
-    // {
-    // port: process.env.PORT || 8443,
-    // host : process.env.HOST || '0.0.0.0'
-    // }
+  {webHook:
+    {
+    port: process.env.PORT || 8443,
+    host : process.env.HOST || '0.0.0.0'
+    }
   }
 )
 
