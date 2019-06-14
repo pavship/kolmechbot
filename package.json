@@ -4,11 +4,11 @@
   },
   "name": "kolmechbot",
   "version": "1.0.0",
-  "main": "bot.js",
+  "main": "index.js",
   "repository": "https://github.com/pavship/kolmechbot.git",
   "author": "PS",
   "license": "MIT",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node index.js"
   }
 }
