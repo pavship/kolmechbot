@@ -1,3 +1,5 @@
+console.log('index.js > ')
+
 const TelegramBot = require('node-telegram-bot-api')
 
 // process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = '0'
