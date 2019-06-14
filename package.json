@@ -10,8 +10,5 @@
   "license": "MIT",
   "scripts": {
     "start": "node bot.js"
-  },
-  // "engines": {
-  //   "node": "10.15.0"
-  // }
+  }
 }
