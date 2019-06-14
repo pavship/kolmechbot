@@ -2,17 +2,20 @@ const TelegramBot = require('node-telegram-bot-api')
 
 // process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = '0'
 
+const token = process.env.TELEGRAM_KOLMECHBOT_TOKEN
+
 const bot = new TelegramBot(
-  process.env.TELEGRAM_KOLMECHBOT_TOKEN,
+  token,
   // {polling: true},
-  {webHook: {
-    // url: '',
-    port: process.env.PORT || 8443,
-    host : process.env.HOST || '0.0.0.0'
-  }}
+  {webHook: true
+    // {
+    // port: process.env.PORT || 8443,
+    // host : process.env.HOST || '0.0.0.0'
+    // }
+  }
 )
 
-console.log('bot > ', bot)
+bot.setWebHook(process.env.TELEGRAM_WEBHOOK_URL + '/bot' + token)
 
 bot.on('message', (msg) => {
   console.log('telegram msg received > ', msg)

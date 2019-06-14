@@ -1,5 +1,9 @@
 {
   "builds": [
     { "src": "bot.js", "use": "@now/node@latest" }
-  ]
+  ],
+  "env": {
+    "TELEGRAM_KOLMECHBOT_TOKEN": "@telegram-kolmech-token",
+    "TELEGRAM_WEBHOOK_URL": "@telegram_webhook_url"
+  }
 }
